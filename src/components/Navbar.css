@@ -1,0 +1,42 @@
+.navbar_flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navlink_specific {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  font-size: 1.68rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+.navlink_specific:focus {
+  color: rgb(44, 28, 28);
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.background {
+  background-color: rgb(160, 163, 163);
+}
+
+.border {
+  border-bottom: 3px solid black;
+}
+
+@media screen and (min-width: 180px) and (max-width: 680px) {
+  .navbar_flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.89em;
+  }
+
+  .navlink_specific {
+    font-size: 0.89em;
+    font-weight: bold;
+  }
+}

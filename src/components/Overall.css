@@ -1,0 +1,29 @@
+.imageSize {
+  width: 20vw;
+  height: auto;
+  border-radius: 12px;
+}
+.imageSize:hover {
+  width: 24vw;
+  height: auto;
+  box-shadow: 6px 6px 4px rgb(30, 29, 38);
+}
+.horizontalruleofEactCategory {
+  width: 78vw;
+  height: 3px;
+  color: black;
+  background-color: black;
+  border-bottom: 2px soid black;
+  border-radius: 5px;
+}
+
+.imageSizeOnCLick {
+  height: 2vh;
+  width: 40vw;
+  height: auto;
+  border-radius: 12px;
+  margin-left: 30vw;
+}
+.align {
+  text-align: center;
+}

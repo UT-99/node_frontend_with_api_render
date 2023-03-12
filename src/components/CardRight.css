@@ -1,0 +1,43 @@
+.mainDivForAnyCategoryContainerCardRight {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 5px solid black;
+  border-radius: 15px;
+}
+
+.outermainDivForAnyCategoryContainerCardRight:hover {
+  box-shadow: 4px 4px 8px black, -4px -4px 8px black;
+  border-radius: 15px;
+}
+
+.imageSizeCardright {
+  width: 90%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.imageSizeCardright:hover {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 6px black, -4px -4px 6px black;
+  text-overflow: unset;
+}
+
+.TitleForEachMoviesForCard {
+  font-size: 0.989rem;
+}
+.TitleForEachMoviesForCard:hover {
+  font-weight: bold;
+}
+
+.outermainDivForAnyCategoryContainerCardRight {
+  display: flex;
+  flex-direction: column;
+}
+.advertismeentforRightCard {
+  width: 98%;
+  height: 20vh;
+  border: 2px solid black;
+}

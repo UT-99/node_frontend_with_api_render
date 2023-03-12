@@ -1,0 +1,32 @@
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  height: 10vh;
+  width: 13vw;
+  background-color: rgb(56, 32, 192);
+  border-radius: 14px;
+  color: rgb(255, 245, 245);
+  font-size: 1.18rem;
+}
+.button:hover {
+  height: 7vh;
+  width: 10vw;
+  background-color: rgb(60, 160, 203);
+  border-radius: 14px;
+  color: black;
+  font-size: 0.98rem;
+}
+
+@media screen and (min-width: 80px) and (max-width: 780px) {
+  .button {
+    height: 20px;
+    width: 140px;
+    background-color: rgb(56, 32, 192);
+    border-radius: 14px;
+    color: rgb(255, 245, 245);
+    font-size: 0.67em;
+  }
+}

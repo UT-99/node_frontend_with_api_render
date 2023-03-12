@@ -1,0 +1,148 @@
+.home_first-flex {
+  width: 70vw;
+  padding-left: 15vw;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  height: 420px;
+}
+
+.left_flex_div {
+  padding: 10px;
+  width: 65%;
+  height: 100%;
+}
+
+.borderRaduis {
+  border-radius: 12px;
+}
+
+.right-flex_div {
+  padding: 10px;
+  flex-direction: column;
+  width: 35%;
+  display: flex;
+  height: 100%;
+}
+
+.width {
+  width: 100%;
+}
+
+.inerMargin {
+  margin: 10px;
+}
+
+.internalstylesforimnages {
+  width: inherit;
+  height: inherit;
+}
+.theLatest {
+  padding-left: 15vw;
+}
+
+.flextwo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flexTwoItmes {
+  width: 30%;
+}
+
+.flexthree {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.thirdDivHomeFlexColumnWiseContainer {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  justify-content: center;
+  margin-left: 20vw;
+}
+
+.thirdDivHomeFlexColumnWiseItems {
+  display: flex;
+  flex-direction: row;
+  height: 350px;
+}
+
+.imageSize {
+  width: 50%;
+}
+
+.thirdDivHomeFlexColumnWiseItemsSecondPartDiv {
+  display: flex;
+  flex-direction: column;
+  padding: 2vw;
+}
+
+.horizontalruleInsideLatestPost {
+  border: 2px solid black;
+  color: black;
+}
+
+.box_shadow_forImagesLatestpost:hover {
+  box-shadow: 2px 2px 3px solid black;
+}
+
+.Adverstiments {
+  height: 40vh;
+  width: 50vw;
+  margin: 0 25vw;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.Adverstiments:hover {
+  background: linear-gradient(to left, pink, skyblue, lightgrey, silver);
+  color: darkred;
+}
+
+.descriptionForHomePageDiv {
+  text-align: "start";
+  font-size: 0.8em;
+}
+
+.lateststreis {
+  margin-left: 15vw;
+}
+
+.hrRule {
+  width: 70vw;
+  margin-left: 15vw;
+  color: black;
+  border: 2px solid black;
+}
+
+.latestStoriesFlexContainer {
+  width: 70vw;
+  margin-left: 15vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.latestStoriesFlexContainerItmes {
+  display: flex;
+  flex-direction: column;
+}
+
+.imageIndiseLateststories {
+  width: 18vw;
+  height: 26em;
+  border-radius: 12px;
+}
+.titleForLatestStoreis {
+  text-align: center;
+  font-size: 0.93em;
+}

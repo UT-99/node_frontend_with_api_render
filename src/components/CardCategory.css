@@ -1,0 +1,76 @@
+.mainDivForAnyCategoryContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 5px solid black;
+  border-radius: 23px;
+}
+
+.mainDivForAnyCategoryContainer:hover {
+  box-shadow: 4px 4px 6px rgb(44, 31, 31), -4px -4px 6px rgb(39, 17, 17);
+}
+
+.flexColumnForEachCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.mainDivForAnyCategoryContainerItemsLeft {
+  width: 60%;
+}
+
+.mainDivForAnyCategoryContainerItemsRight {
+  width: 27%;
+  height: 100px;
+}
+
+.TitleForEachMovies {
+  text-align: left;
+}
+.TitleForEachMovies:hover {
+  text-align: center;
+  text-shadow: 2px 2px 8px black;
+}
+
+.TitleForEachMovies:hover {
+  font-size: x-large;
+  color: rgb(75, 22, 23);
+  text-align: left;
+}
+
+.descriptionforeachmovie {
+  text-align: start;
+  font-size: 0.86em;
+}
+
+.text_decoration {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (min-width: 180px) and (max-width: 780px) {
+  .mainDivForAnyCategoryContainerItemsLeft {
+    width: 100%;
+  }
+
+  .mainDivForAnyCategoryContainerItemsRight {
+    width: 100%;
+  }
+
+  .TitleForEachMovies:hover {
+    font-size: x-large;
+    color: rgb(75, 22, 23);
+    text-align: left;
+  }
+
+  .TitleForEachMovies:hover {
+    text-align: center;
+    text-shadow: 2px 2px 8px black;
+  }
+
+  .mainDivForAnyCategoryContainer:hover {
+    box-shadow: 4px 4px 6px rgb(44, 31, 31), -4px -4px 6px rgb(39, 17, 17);
+  }
+}

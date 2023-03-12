@@ -1,10 +1,9 @@
-import "./App.css";
-import Navbar from "./components/Navbar";
-import Routing from "./components/Routing";
-import Heading from "./components/Heading";
+import React, { createContext, useState } from "react";
 
-function App() {
-  const arr = [
+export const store = createContext();
+
+const Details = (props) => {
+  const [details, setDetails] = useState([
     {
       id: 1,
       title: "Shah Rukh Khan",
@@ -15,7 +14,7 @@ function App() {
     },
     {
       id: 51,
-      title: "Amitabh Bachchane",
+      title: "Amitabh Bachchanr",
       img: "https://media.gettyimages.com/photos/indian-actor-amitabh-bachchan-poses-on-the-red-carpet-for-the-4th-picture-id97942617?k=20&m=97942617&s=612x612&w=0&h=sjWZ5uQGKCfe3xuaEnbRluarZVhCinXidBwJjJaUtho=",
       category: "bollywood",
       description:
@@ -159,7 +158,7 @@ function App() {
       title:
         "Amber Heard says she has received threats 'every single day' during trial: 'People want to put my baby in a microwave' ",
       img: "https://images.hindustantimes.com/img/2022/05/27/550x309/amber_heard_1652846124301_1653656835956.JPG",
-      category: "footer1",
+      category: "footer2",
       description:
         "In a video from the trial shared by Law & Crime Network on their YouTube channel, Amber told the jury, I am harassed, humiliated, threatened, every single day. Even just walking into this courtroom. Sitting here in front of the world, having the worst parts of my life, things that I have lived through, used to humiliate me. People want to kill me and they tell me so every day. People want to put my baby in the microwave, and they tell me that. She also said, I live my life with these sets of rules I've to follow, my friends have to follow for me not to have a panic attack or a triggering event or I relive the trauma, even from training to do. In my movie, for instance, for training for Aquaman, a combat scene and a trigger happen. I have a meltdown and have to deal with that, the crew I work with have to deal with that, because of the damage I walk around with every single day. I am not sitting in this courtroom snickering. I’m not sitting in this courtroom laughing, smiling, or making snide jokes. I’m not. This is horrible. A jury is scheduled to hear the closing arguments on Friday in Johnny's lawsuit against Amber. Each side will have two hours to summarise their case in a trial that has stretched on for six weeks. Johnny Depp is suing Amber for $50 million in Virginia's Fairfax County Circuit Court over a December 2018 op-ed she wrote in The Washington Post describing herself as “a public figure representing domestic abuse”. His lawyers say he was defamed by the article even though it never mentioned his name.",
     },
@@ -257,12 +256,12 @@ function App() {
       id: 63,
       title: "A face search engine anyone can use is alarmingly accurate ",
       img: "https://images.indianexpress.com/2022/05/Facial-search-engine-featured.jpg",
-      category: "footer1",
+      category: "footer3",
       description:
         "For $29.99 a month, a website called PimEyes offers a potentially dangerous superpower from the world of science fiction: the ability to search for a face, finding obscure photos that would otherwise have been as safe as the proverbial needle in the vast digital haystack of the internet.A search takes mere seconds. You upload a photo of a face, check a box agreeing to the terms of service and then get a grid of photos of faces deemed similar, with links to where they appear on the internet. The New York Times used PimEyes on the faces of a dozen Times journalists, with their consent, to test its powers.PimEyes found photos of every person, some that the journalists had never seen before, even when they were wearing sunglasses or a mask, or their face was turned away from the camera, in the image used to conduct the search. PimEyes found one reporter dancing at an art museum event a decade ago, and crying after being proposed to, a photo that she didn’t particularly like but that the photographer had decided to use to advertise his business on Yelp. A tech reporter’s younger self was spotted in an awkward crush of fans at the Coachella music festival in 2011. A foreign correspondent appeared in countless wedding photos, evidently the life of every party, and in the blurry background of a photo taken of someone else at a Greek airport in 2019. A journalist’s past life in a rock band was unearthed, as was another’s preferred summer camp getaway.",
     },
     {
-      id: 222,
+      id: 22,
       title: "Artificial intelligence in healthcare",
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/X-ray_of_hand%2C_where_bone_age_is_automatically_found_by_BoneXpert_software.jpg/330px-X-ray_of_hand%2C_where_bone_age_is_automatically_found_by_BoneXpert_software.jpg",
       category: "Technology",
@@ -520,15 +519,14 @@ function App() {
       description:
         "If you are a fitness enthusiast and a vegan, you might be one of the people who have tofu in their meals instead of paneer. While many people find it easily in the supermarket, others may find it difficult to spot tofu at their local stores. If you are one of those people, don’t worry as this simple method can help you make protein-rich tofu at home with just two ingredients – chickpeas and water.Once the tofu is set, you can use it as and when required. It is as tasty as the tofu bought from a store and tofu is as versatile as cottage cheese. It can be used in dry and wet recipes depending on your mood and diet requirements. Chickpea is rich in protein and hence the tofu is a great source of protein to help you complete the daily protein requirement.Soak the chickpeas overnight after thoroughly washing with the help of a strainer under running water.Drain all the water and wash the chickpeas the next day. Add chickpeas with two cups of water in a blender and blend in batches until you have a smooth mixture.Strain the blended chickpeas through a muslin cloth into a bowl. Make a squeezable bag out of the muslin cloth with the mixture in it. Squeeze the blend well to strain it nicely. As the water drains slowly from the mixture, it takes some time to strain the blend.Take the strained blend and put it in a pot. Keep the pot on full flame and let the mixture boil. Once you see bubbles, lower the flame and cook the blend for another half n hour. The mixture will thicken with time. When it is thick enough, put off the flame and let the blend cool down for a while. Leave the mixture in a container for more than 2 hours idle. This will ensure that the mixture sits and the tofu sets properly",
     },
-  ];
-
+  ]);
   return (
-    <>
-      <Heading />
-      <Navbar />
-      <Routing array={arr} />
-    </>
+    <div>
+      <store.Provider value={[details, setDetails]}>
+        {props.children}
+      </store.Provider>
+    </div>
   );
-}
+};
 
-export default App;
+export default Details;
